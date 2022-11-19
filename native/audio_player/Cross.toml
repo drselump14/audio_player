@@ -4,4 +4,4 @@ passthrough = [
 ]
 
 [target.arm-unknown-linux-gnueabihf]
-image = "builder/armv7-unknown-linux-gnueabihf:latest"
+image = "drselump14/audio_player_nif_builder:armv7-unknown-linux-gnueabihf"
