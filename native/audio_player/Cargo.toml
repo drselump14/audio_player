@@ -1,0 +1,15 @@
+[package]
+name = "audio_player"
+version = "0.1.0"
+authors = ["drselump14"]
+edition = "2018"
+
+[lib]
+name = "audio_player"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.26.0"
+lazy_static = "1.0"
+rodio = "0.16.0"
