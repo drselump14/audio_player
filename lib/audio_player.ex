@@ -5,12 +5,16 @@ defmodule AudioPlayer do
 
   version = Mix.Project.config()[:version]
 
-  use RustlerPrecompiled,
+  # use RustlerPrecompiled,
+  #   otp_app: :audio_player,
+  #   crate: "audio_player",
+  #   base_url: "https://github.com/drselump14/audio_player/releases/download/v#{version}",
+  #   force_build: System.get_env("RUSTLER_PRECOMPILATION_EXAMPLE_FORCE_BUILD") in ["1", "true"],
+  #   version: version
+  use Rustler,
     otp_app: :audio_player,
     crate: "audio_player",
-    base_url: "https://github.com/drselump14/audio_player/releases/download/v#{version}",
-    force_build: System.get_env("RUSTLER_PRECOMPILATION_EXAMPLE_FORCE_BUILD") in ["1", "true"],
-    version: version
+    target: System.get_env("RUSTLER_TARGET")
 
   @doc """
   Play an audio file
