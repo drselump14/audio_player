@@ -32,7 +32,14 @@ defmodule AudioPlayer.MixProject do
 
   defp package do
     [
-      files: ~w(lib native mix.exs README.md LICENSE.md),
+      files: [
+        "lib",
+        "native/audio_player/src",
+        "native/audio_player/Cargo.toml",
+        "mix.exs",
+        "README.md",
+        "LICENSE.md"
+      ],
       maintainers: ["Slamet Kristanto"],
       licenses: ["MIT"],
       links: %{
