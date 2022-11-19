@@ -2,3 +2,6 @@
 passthrough = [
   "RUSTLER_NIF_VERSION"
 ]
+
+[target.arm-unknown-linux-gnueabihf]
+image = "builder/armv7-unknown-linux-gnueabihf:latest"
