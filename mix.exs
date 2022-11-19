@@ -26,6 +26,7 @@ defmodule AudioPlayer.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
+      {:rustler_precompiled, "~> 0.5"},
       {:rustler, "~> 0.26.0"}
     ]
   end
