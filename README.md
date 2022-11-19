@@ -1,6 +1,6 @@
 # AudioPlayer
 
-**TODO: Add description**
+Play sound file using elixir. NIF implementation using rodio crate.
 
 ## Installation
 
@@ -18,4 +18,10 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/audio_player>.
+
+### Usage
+
+```elixir
+    AudioPlayer.play("~/audio.mp3")
+```
 

@@ -7,7 +7,11 @@ defmodule AudioPlayer.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      name: "audio_player",
+      package: package(),
+      description: "Play sound file using elixir. NIF implementation using rodio crate.",
+      source_url: github_repo()
     ]
   end
 
@@ -23,8 +27,21 @@ defmodule AudioPlayer.MixProject do
     [
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:rustler, "~> 0.26.0"}
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
+  end
+
+  defp package do
+    [
+      files: ~w(lib native mix.exs README.md LICENSE.md),
+      maintainers: ["Slamet Kristanto"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => github_repo()
+      }
+    ]
+  end
+
+  defp github_repo do
+    "https://github.com/drselump14/audio_player"
   end
 end

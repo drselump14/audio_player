@@ -7,6 +7,11 @@ defmodule AudioPlayer do
 
   @doc """
   Play an audio file
+
+  ## Examples
+
+      iex> AudioPlayer.play("audio.mp3")
+
   """
   @spec play(String.t()) :: :ok
   def play(_audio_file_path), do: error()
