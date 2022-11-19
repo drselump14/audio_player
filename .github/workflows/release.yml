@@ -44,8 +44,8 @@ jobs:
       shell: bash
       run: |
         case ${{ matrix.job.target }} in
-          arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf alsa;;
-          aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu alsa;;
+          arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf libasound2-dev portaudio19-dev build-essential libpulse-dev libdbus-1-dev ;;
+          aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu libasound2-dev portaudio19-dev build-essential libpulse-dev libdbus-1-dev ;;
         esac
 
     - name: Extract crate information
