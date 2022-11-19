@@ -4,7 +4,7 @@ defmodule AudioPlayer.MixProject do
   def project do
     [
       app: :audio_player,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -35,6 +35,7 @@ defmodule AudioPlayer.MixProject do
       files: [
         "lib",
         "native/audio_player/src",
+        "native/audio_player/.cargo",
         "native/audio_player/Cargo.toml",
         "mix.exs",
         "README.md",
