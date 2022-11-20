@@ -8,3 +8,6 @@ image = "drselump14/audio_player_nif_builder:arm-unknown-linux-gnueabihf"
 
 [target.aarch64-unknown-linux-gnu]
 image = "drselump14/audio_player_nif_builder:aarch64-unknown-linux-gnu"
+
+[target.x86_64-unknown-linux-musl]
+image = "drselump14/audio_player_nif_builder:x86_64-unknown-linux-musl"
