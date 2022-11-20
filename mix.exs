@@ -1,10 +1,11 @@
 defmodule AudioPlayer.MixProject do
   use Mix.Project
 
+  @version "0.2.0"
   def project do
     [
       app: :audio_player,
-      version: "0.2.0",
+      version: @version,
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
