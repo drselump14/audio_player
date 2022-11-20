@@ -40,6 +40,7 @@ defmodule AudioPlayer.MixProject do
         "native/audio_player/.cargo",
         "native/audio_player/Cargo.toml",
         "mix.exs",
+        "checksum-Elixir.AudioPlayer.exs",
         "README.md",
         "LICENSE.md"
       ],
