@@ -1,8 +1,8 @@
 [package]
 name = "audio_player"
-version = "0.1.0"
+version = "0.2.2"
 authors = ["drselump14"]
-edition = "2018"
+edition = "2021"
 
 [lib]
 name = "audio_player"
