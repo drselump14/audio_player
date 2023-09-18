@@ -1,7 +1,7 @@
 defmodule AudioPlayer.MixProject do
   use Mix.Project
 
-  @version "0.2.1"
+  @version "0.2.2"
   def project do
     [
       app: :audio_player,
@@ -27,8 +27,8 @@ defmodule AudioPlayer.MixProject do
   defp deps do
     [
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
-      {:rustler_precompiled, "~> 0.5"},
-      {:rustler, "~> 0.26.0"}
+      {:rustler_precompiled, "~> 0.6.3"},
+      {:rustler, "~> 0.29.1"}
     ]
   end
 
