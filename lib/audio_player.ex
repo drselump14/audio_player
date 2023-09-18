@@ -10,7 +10,16 @@ defmodule AudioPlayer do
     crate: "audio_player",
     base_url: "https://github.com/drselump14/audio_player/releases/download/v#{version}",
     force_build: System.get_env("RUSTLER_PRECOMPILATION_EXAMPLE_FORCE_BUILD") in ["1", "true"],
-    version: version
+    version: version,
+    targets: [
+      "aarch64-apple-darwin",
+      "aarch64-unknown-linux-gnu",
+      "arm-unknown-linux-gnueabihf",
+      "x86_64-apple-darwin",
+      "x86_64-pc-windows-gnu",
+      "x86_64-pc-windows-msvc",
+      "x86_64-unknown-linux-musl"
+    ]
 
   @doc """
   Play an audio file
